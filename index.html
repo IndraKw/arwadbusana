@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Website Dengan CSS Grid</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">ARWAD BUSANA</h2>
+                <p class="sub-heading">Hoodie & T-Shirt</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="price">IDR 250K</h4>
+                <p class="item">Hoodie</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price">IDR 250K</h4>
+                <p class="item">T-Shirt</p>
+            </div>
+        </header>
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <spna></spna>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>ARWAD BUSANA</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Galery</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+            <section class="services">
+                <div class="service">
+                    <div class="icon">🚲</div>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatem expedita nisi. Ipsa, dignissimos repellendus.</h3>
+                </div>
+            </section>
+            <section class="services">
+                <div class="service">
+                    <div class="icon">✈</div>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatem expedita nisi. Ipsa, dignissimos repellendus.</h3>
+                </div>
+            </section>
+            <section class="services">
+                <div class="service">
+                    <div class="icon">🚝</div>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatem expedita nisi. Ipsa, dignissimos repellendus.</h3>
+                </div>
+            </section>
+            <section class="gallery">
+                <h2>Galery</h2>
+                <img src="/gambar/indra.jpg" alt="">
+                <img src="/gambar/indra.2.jpg" alt="">
+                <img src="/gambar/indra3.jpg" alt="">
+                <img src="/gambar/indra.2.jpg" alt="">
+                <img src="/gambar/indra.2.jpg" alt="">
+                <img src="/gambar/indra.2.jpg" alt="">
+                <img src="/gambar/indra.2.jpg" alt="">
+                <img src="/gambar/indra.2.jpg" alt="">
+                <img src="/gambar/indra.2.jpg" alt="">
+            </section>
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle input');
+            const nav = document.querySelector('nav ul');
+
+            menuToggle.addEventListener('click', function () {
+           nav.classList.toggle('slide'); 
+            });
+        </script>
+    </body>
+</html>
